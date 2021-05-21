@@ -43,7 +43,7 @@ func searchHandler(newsapi *news.Client) http.HandlerFunc {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-
+//test push
 		params := u.Query()
 		searchQuery := params.Get("q")
 		page := params.Get("page")
